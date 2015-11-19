@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<script>
+function ConfirmDelete()
+{
+  var x = confirm("Confirma Excluir o Funcionário ?");
+  if (x)
+      return true;
+  else
+    return false;
+}
+</script>
+
+
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Avaliação do aplicativo Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./assets/js/ie-emulation-modes-warning.js"></script>
+	<script type="text/javascript" src="./css/jquery.js"></script>
+	<script type="text/javascript" src="./css/bootstrap-confirmation.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Lista de Dados Cadastrados</div>
+	
+	<!-- Table -->
+	<table class="table">
+	        <thead>
+            <tr>
+				<th><input type="checkbox"></th>
+                <th>Nome</th>
+                <th>Email</th>
+				<th>Sexo</th>
+                <th>Observações</th>
+				<th>Edit</th>
+				<th>Delele</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+				<th><input type="checkbox"></th>
+                <th>Nome</th>
+                <th>Email</th>
+				<th>Sexo</th>
+                <th>Observações</th>
+				<th>Edit</th>
+				<th>Delele</th>
+			</tr>
+        </tfoot>
+       <tbody>
+            <tr>
+				<td><input type="checkbox"></td>
+                <td>Eduardo</td>
+                <td>eduardo@bbb.com.br</td>
+                <td>Masculino</td>
+                <td>Coordenador</td>
+				<td><a href="administrar_usuario.html"><i class="glyphicon glyphicon-pencil"></i></a></a></td>
+				<td><a href=""><i class="glyphicon glyphicon-trash" onclick="ConfirmDelete()"></i></a></td>
+			</tr>
+            <tr>
+				<td><input type="checkbox"></td>
+                <td>José Antonio</td>
+                <td>jantonio@bbb.com.br</td>
+                <td>Masculino</td>
+                <td>Administrador</td>
+				<td><a href="administrar_usuario.html"><i class="glyphicon glyphicon-pencil"></i></a></a></td>
+				<td><a href=""><i class="glyphicon glyphicon-trash" onclick="ConfirmDelete()"></i></a></td>
+			</tr>
+            <tr>
+				<td><input type="checkbox"></td>
+                <td>Marcelo</td>
+                <td>marcelo@bbb.com.br</td>
+                <td>Masculino</td>
+                <td>Analista de Sistemas</td>
+				<td><a href="administrar_usuario.html"><i class="glyphicon glyphicon-pencil"></i></a></a></td>
+				<td><a href=""><i class="glyphicon glyphicon-trash" onclick="ConfirmDelete()"></i></a></td>
+			</tr>
+
+		</tbody>		
+  </table>
+<nav align="right">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+ </div>
+<div class="container" align="center">
+<a class="btn btn-primary" href="administrar_usuario.html" role="button"><i class="glyphicon glyphicon-user"></i> Novo Usuário</a>
+<a class="btn btn-primary" href="login.html" role="button"><i class="glyphicon glyphicon-log-out"></i> Logout</a>
+</div>
+
+  </
+		<%=inputEmail%>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
